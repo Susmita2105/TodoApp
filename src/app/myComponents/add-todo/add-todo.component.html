@@ -1,0 +1,15 @@
+<h4 style="color: white; font-family: cursive;">Add a ToDO :(</h4>
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <div class="mb-1 c">
+      <label for="title" style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive;">Title</label>
+      <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title">
+    </div>
+    <div class="mb-1">
+      <label for="desc" style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive">Description</label>
+      <input type="text" [(ngModel)]="desc" name="desc" class="form-control" id="desc">
+    </div>
+    
+    <button type="submit" class="btn btn-sm btn-primary mb-1 mt-1" style="border: 2px solid white; font-weight: 600;">Add ToDo</button>
+</form>
+
+

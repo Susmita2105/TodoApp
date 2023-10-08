@@ -1,0 +1,10 @@
+.myContent{
+    border: 1px solid white;
+    padding: 10px;  
+}
+
+.strike{
+    text-decoration: line-through;
+    text-decoration-color: red;
+    /* font-weight: bold; */
+}

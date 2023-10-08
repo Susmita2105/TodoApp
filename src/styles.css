@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+    margin: 0; 
+    padding: 0; 
+    background-image: url('assets/b.jpg');
+    background-size: cover; 
+    background-position: center ; 
+    background-repeat: no-repeat; 
+    width: 100vw;
+    height: 100vh; 
+    overflow-x: hidden;
+    /* background-color: black; */
+    overflow-y: auto;
+}
+
+*{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
