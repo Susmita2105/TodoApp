@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { todo } from 'src/app/todo';
-import { ToastrService } from 'ngx-toastr';
 import { Time } from '@angular/common';
 
 @Component({

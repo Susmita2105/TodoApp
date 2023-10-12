@@ -10,7 +10,7 @@ import { AddTodoComponent } from './myComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr';
+
 
 // import { FontAwesomeModule } from '@fontawesome/angular-fontawesome';
 
@@ -27,7 +27,7 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule, 
-    ToastrModule.forRoot() 
+    
    
   ],
   providers: [],
