@@ -9,6 +9,12 @@ import { TodoItemComponent } from './myComponents/todo-item/todo-item.component'
 import { AddTodoComponent } from './myComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+
+// import { FontAwesomeModule } from '@fontawesome/angular-fontawesome';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +25,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot() 
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

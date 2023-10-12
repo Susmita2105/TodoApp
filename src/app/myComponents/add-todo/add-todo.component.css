@@ -1,0 +1,6 @@
+.btn{
+    background-color: black;
+}
+.btn:disabled{
+    background-color: slategrey;
+}

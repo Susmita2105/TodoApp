@@ -1,15 +1,22 @@
-<h4 style="color: white; font-family: cursive;">Add a ToDO :(</h4>
+<h4 style="color: white; font-family: cursive;"><img src="assets/check.png" alt="todoLogo" height="30px" width="30px">Add a ToDO<img src="assets/ok.png" alt="todoLogo" height="40px" width="40px"> </h4>
+
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
     <div class="mb-1 c">
-      <label for="title" style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive;">Title</label>
-      <input type="text" [(ngModel)]="title" name="title" class="form-control" id="title">
+      <label for="title"  style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive;">Title</label>
+      <input type="text" placeholder="Enter a new todo" [(ngModel)]="title" name="title" class="form-control" id="title" required>
     </div>
+
     <div class="mb-1">
       <label for="desc" style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive">Description</label>
-      <input type="text" [(ngModel)]="desc" name="desc" class="form-control" id="desc">
+      <input type="text" placeholder="Write something about it" [(ngModel)]="desc" name="desc" class="form-control" id="desc" required>
+    </div>
+
+    <div class="mb-1">
+      <label for="taskTime" style="color: rgb(255, 255, 255); font-size: 20px;font-family: cursive">Task Time</label>
+      <input type="time" placeholder="Time" [(ngModel)]="taskTime" name="taskTime" class="form-control" id="taskTime" >
     </div>
     
-    <button type="submit" class="btn btn-sm btn-primary mb-1 mt-1" style="border: 2px solid white; font-weight: 600;">Add ToDo</button>
+    <button type="submit" [disabled]="!myForm.form.valid" class="btn btn-sm btn-primary mb-1 mt-1" style="border: 2px solid white; font-weight: 600;" (click)="setAlarm(title,taskTime)">Add ToDo</button>
 </form>
 
 

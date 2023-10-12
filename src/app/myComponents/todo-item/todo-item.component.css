@@ -1,10 +1,12 @@
 .myContent{
-    border: 1px solid white;
-    padding: 10px;  
+    border: 1px solid black;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-family: monospace;   
 }
 
 .strike{
     text-decoration: line-through;
     text-decoration-color: red;
-    /* font-weight: bold; */
 }
